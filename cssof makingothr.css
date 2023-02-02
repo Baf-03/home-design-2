@@ -1,0 +1,104 @@
+body{
+	background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://img.freepik.com/free-photo/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table_105762-1783.jpg?w=900&t=st=1674237577~exp=1674238177~hmac=0d08bcdb21c9edb1664b32b5355e13458691bf3116434a25c65312e4438ef8aa) no-repeat ;
+	background-size: 100% 100%;
+	background-position: fixed ;
+	font-family: Cavolini;
+}
+
+.main{
+	width:100%;
+	height:100vh;
+	float:left;
+}
+.imgdiv{
+	width:200px;
+	height:100px;
+	float:left;
+}
+.anchor{
+	text-decoration: none;
+	color:wheat ;
+	text-transform: uppercase;
+	position: relative;
+}
+
+
+.cols {
+	padding-top: 70px;	
+	padding-right: 70px;
+	width:100px;
+	height: 100px;
+	float:right;
+	color:white;
+	
+
+}
+.anchor::after{				
+	content: "";
+	height: 3px;
+	width: 0%;
+	background: darkgoldenrod;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+
+.anchor:hover::after{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+}
+
+.content h1{
+	font-size: 70px;
+
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 25px;
+}
+.btn{
+	width: 200px;
+	padding:15px 0;
+	text-align: center;
+	margin:20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid darkgoldenrod;
+	background: transparent;
+	color: #fff;
+	cursor:pointer;
+	transition: 1s;
+	overflow: hidden;
+	position: relative;
+
+}
+
+
+
+span{
+	background: darkgoldenrod;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 1s;
+	z-index: -1;
+
+}
+.btn:hover span{
+	width: 100%;
+	
+}
